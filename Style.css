@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  justify-content: center;
+    align-items: center;
+  background-image: url('Fruits/bg.jpg');
+  background-attachment: fixed;
+  background-size: cover; 
+  background-position: center; 
+  margin: 0;
+  padding: 0;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('Fruits/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  transform: translate(-50%, -50%); 
+  border-radius: 180px; 
+  z-index: -1;
+}
+
+
+.myntra_home {
+  height: 45px;
+}
+
+.logo_container {
+  margin-left: 4%;
+}
+
+.action_bar {
+  margin-right: 10%;
+}
+li,.action_name {
+    list-style: none;
+}
+
+a,.action_name {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+a:hover,.action_name {
+    color: #00eaff;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+    border-radius: 35px;
+    padding: 10px; }
+  .navbar .navbar-nav {
+    margin: 0 auto;}
+  
+  .navbar .nav-link {
+    color: white; 
+  }
+  
+  .navbar .navbar-brand {
+    color: white;
+    font-size: 20px
+  }
+  
+  .navbar .nav-link:hover,
+  .navbar .navbar-brand:hover {
+    color: #ddd;
+  }
+  
+.bag-item-count{
+  background-color: red;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  /* position: absolute; */
+  /* top: -10px; */
+  /* right: -15px;  */
+  /* line-height: 1;  */
+  font-weight: bold;
+  /* margin-bottom: 80%; */
+
+
+}
+
+
+.highlight {
+    background-color: #0ef;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.highlight:hover {
+    transform: scale(1.05);
+    color: #000;
+}
+
+.highlight:active {
+    transform: scale(0.95);
+}
+
+
+
+.search_bar {
+
+  height: 40px;
+  min-width: 200px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.search_icon {
+  box-sizing: content-box;
+  height: 20px;
+  padding: 10px;
+
+  background-color: #f5f5f6;
+  color: #282c3f;
+  font-weight: 300;
+  border-radius: 4px 0 0 4px;
+}
+
+.search_input {
+  color: #696e79;
+  background-color: #f5f5f6;
+  flex-grow: 1;
+  height: 40px;
+  margin-right: 5%;
+
+  border-radius: 0 4px 4px 0;
+}
+
+.material-symbols-outlined {
+  background-color: rgb(65, 201, 255);
+}
+
+.action_bar {
+  display: flex;
+  min-width: 200px;
+  justify-content: space-evenly;
+}
+
+.action_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.items-cont {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  margin: 40px 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex; /* Aligns the cards in a row */
+  flex-wrap: wrap; /* Allows the cards to wrap to the next line if they overflow */
+  justify-content: space-around;
+}
+
+.item-cont {
+  border-radius: 20px;
+  background: linear-gradient(to bottom, rgb(253, 113, 102), rgba(255, 0, 0, 0));
+  padding: 10px 15px;
+  margin: 15px;
+  width: 250px;
+}
+
+
+
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  aspect-ratio: 8/9;
+  max-width: 1;
+  object-fit: contain;
+  width: 100%;
+}
+
+.rating {
+  font-size: 90%;
+  font-weight: 700;
+
+}
+
+.comp-name {
+
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  color: black;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+.product-decrption {
+  color: #383838;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.price-secton {
+
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 15px;
+  color: #444444;
+  white-space: nowrap;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #282c3f;
+
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #444444;
+  font-weight: 400;
+  margin-left: 5px;
+  font-size: 16px;
+
+}
+
+.discount {
+  color: rgb(255, 0, 0);
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 5px;
+
+}
+
+.add-to-bag {
+margin-left: 8%;
+  margin-top: 20px;
+  width: 80%;
+  font-weight: 550;
+  font-size: 18px;
+  margin-top: 10px;
+  background-color:rgb(73, 72, 72);
+  color: #ffffff;
+  /* background-color:#0ef; */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  padding: 30px 0px 40px 0px;
+  background-color: #0000007f; 
+  display: flex;
+  justify-content: space-evenly;
+  /* border-radius: 60px; */
+}
+
+.footer_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_column h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.footer_column a {
+  color: #343434;
+  font-size: 16px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.copyright {
+  color: black;
+  text-align: end;
+  padding: 1%;
+}
+
+
+/* Message box styles */
+.message-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.message-content {
+  background-color: #ff000057;
+  border: 1pt solid rgba(255, 0, 0, 0.748);
+
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.message-content p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.message-content button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-content button:hover {
+  background-color: #0056b3;
+}
